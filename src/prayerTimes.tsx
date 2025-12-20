@@ -6,6 +6,7 @@ export default function PrayerTimes({ city }: { city: string }) {
 
   useEffect(() => {
     
+    setTimes('');
 
     fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Palestine&method=5`)
       .then((ras) =>  ras.json() )
