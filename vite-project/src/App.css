@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiri", serif;
+  cursor: pointer;
+}
+
+html{
+  direction: rtl;
+}
+
+section{
+  min-width: 100vw; 
+  min-height: 100vh;
+  background-image: url("https://ramallah.news/uploads//images/91f2bac070b1d8e742431d0dedc41846.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+}
+section .container{
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 25px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 50px;
+  color : black;
+  font-weight: lighter; 
+}
+section .top_sec{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+section .top_sec select {
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 22px;
+  margin-top: 10px;
+  background-color: transparent;
+ font-weight: bold;
+}
+
+section .top_sec select:focus {
+  background-color: rgb(35, 111, 88);
+  color: white;
+  outline: none;
+  border: 2px solid rgb(25, 90, 70);
+}
+
+section .top_sec h3{
+  font-size: 26px;
+  color: white;
+}
+section .top_sec date{
+  width: 250px;
+}
+
+section .prayer{
+  padding-top: 40px;
+}
