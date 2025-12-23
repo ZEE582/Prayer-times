@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
 import "./prayerTimes.css";
 export default function PrayerTimes({ city }: { city: string }) {
-  const [times, setTimes] = useState();
+  const [times, setTimes] = useState(null);
 
 
   useEffect(() => {
     
-    setTimes('');
+    setTimes(null);
 
     fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Palestine&method=5`)
-      .then((ras) =>  ras.json() )
-      .then((event) => setTimes(event.data.timings))
-    
+      .then(ras =>  ras.json() )
+      .then(event => setTimes(event.data.timings))
   }, [city]);
 
 
